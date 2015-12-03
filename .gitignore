@@ -1,0 +1,59 @@
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+[Bb]in
+[Oo]bj
+[Dd]ebug
+[Rr]elease
+Debug
+*.htm
+*.suo
+*.user
+*.DS_Store
+*.sln.docstates
+x64/
+*.apk
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+.builds
+.vs
+
+
+Sage.SageOne.SageOneMobile.userprefs
+
+# Localization files
+*.mo
+
+# NuGet Packages Directory
+packages/
+
+# Components Sample
+Components/*/samples/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# ReSharper is a .NET coding add-in
+_ReSharper*
+
+
+# Others
+~$*
+*.bak
+*.dbmdl

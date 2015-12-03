@@ -1,0 +1,33 @@
+﻿<Properties StartupItem="iOS/ControlTester.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../src/sageone_xamarin/Sage.SageOne.SageOneMobile.Controls/ViewCells/EntityListViewCell.cs">
+    <Files>
+      <File FileName="../../src/sageone_xamarin/Sage.SageOne.SageOneMobile.Controls/Views/CurrencyView.cs" Line="71" Column="48" />
+      <File FileName="../../src/sageone_xamarin/Sage.SageOne.SageOneMobile.Controls/Views/MonthAndDayView.cs" Line="29" Column="15" />
+      <File FileName="../../src/sageone_xamarin/Sage.SageOne.SageOneMobile.Controls/ViewCells/EntityListViewCell.cs" Line="137" Column="1" />
+      <File FileName="../../src/sageone_xamarin/Sage.SageOne.SageOneMobile.Controls/ValueConverters/InvoiceDateColorConverter.cs" Line="12" Column="33" />
+      <File FileName="ViewModels/EntityViewModel.cs" Line="13" Column="28" />
+      <File FileName="Models/Entity.cs" Line="19" Column="37" />
+      <File FileName="ViewModels/EntityListViewModel.cs" Line="23" Column="6" />
+      <File FileName="Views/EntityListView.cs" Line="24" Column="73" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ControlTester" expanded="True">
+            <Node name="ControlTester" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../src/sageone_xamarin/Sage.SageOne.SageOneMobile/Model/APIObject.cs" line="477" offsetX="697" offsetY="7140" expression="jsonString" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

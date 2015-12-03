@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{C4BE2EFA-3D83-4637-B67A-F27186A8FEF4}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ControlTester</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ControlTester.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\EntityFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EntityListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EntityViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EntityListView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Factories\" />
+  </ItemGroup>
+</Project>
