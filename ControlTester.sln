@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlTester.iOS", "iOS\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlTester.Droid", "Droid\ControlTester.Droid.csproj", "{1B36F1A5-CEF7-4DBF-BEC8-3A3EED3B1799}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.SageOne.SageOneMobile.Controls", "..\..\src\sageone_xamarin\Sage.SageOne.SageOneMobile.Controls\Sage.SageOne.SageOneMobile.Controls.csproj", "{962C8A96-3ADC-4FA9-8937-EB2C443F0DB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.SageOne.SageOneMobile.Controls", "..\..\..\src\sageone_xamarin\Sage.SageOne.SageOneMobile.Controls\Sage.SageOne.SageOneMobile.Controls.csproj", "{962C8A96-3ADC-4FA9-8937-EB2C443F0DB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
