@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using ControlTester.ViewModels;
-using Sage.SageOne.SageOneMobile.Controls.ViewCells;
+﻿using ControlTester.ViewModels;
 using Xamarin.Forms;
+using ControlTester.ViewCells;
 
 namespace ControlTester.Views
 {
-    public class EntityListView : ListView
+    public class ExpenseListView : ListView 
     {
-        EntityListViewModel _viewModel;
+        ExpenseListViewModel _viewModel;
 
-
-        public EntityListView(EntityListViewModel viewModel)
+        public ExpenseListView(ExpenseListViewModel viewModel)
         {
             _viewModel = viewModel;
 
@@ -21,7 +16,7 @@ namespace ControlTester.Views
             BackgroundColor = Color.FromHex("d3d3d3");
             SeparatorVisibility = SeparatorVisibility.None;
             ItemsSource = _viewModel.EntityList;
-            ItemTemplate = new DataTemplate(typeof(EntityListViewCell));
+            ItemTemplate = new DataTemplate(typeof(ExpenseListViewCell));
 
             ItemTapped += delegate(object sender, ItemTappedEventArgs e)
             {
@@ -29,8 +24,7 @@ namespace ControlTester.Views
                 ((ListView)sender).SelectedItem = null;
             };
         }
-
-
     }
 }
+
 

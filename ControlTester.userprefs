@@ -1,14 +1,30 @@
 ﻿<Properties StartupItem="iOS/ControlTester.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../src/sageone_xamarin/Sage.SageOne.SageOneMobile.Controls/packages.config">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Invoice.cs">
     <Files>
-      <File FileName="ViewModels/EntityViewModel.cs" Line="1" Column="1" />
-      <File FileName="Models/Entity.cs" Line="1" Column="1" />
-      <File FileName="ViewModels/EntityListViewModel.cs" Line="1" Column="1" />
-      <File FileName="../../../src/sageone_xamarin/Sage.SageOne.SageOneMobile.Controls/ViewCells/EntityListViewCell.cs" Line="2" Column="7" />
-      <File FileName="ControlTester.cs" Line="13" Column="43" />
-      <File FileName="../../../src/sageone_xamarin/Sage.SageOne.SageOneMobile.Controls/packages.config" Line="1" Column="1" />
+      <File FileName="Factories/ProductFactory.cs" Line="11" Column="64" />
+      <File FileName="Factories/InvoiceFactory.cs" Line="1" Column="1" />
+      <File FileName="Models/Invoice.cs" Line="1" Column="1" />
+      <File FileName="Models/Product.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ControlTester" expanded="True" selected="True">
+            <Node name="ControlTester" expanded="True">
+              <Node name="Factories" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ValueConverters" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+            <Node name="Sage.SageOne.SageOneMobile.Controls" expanded="True">
+              <Node name="ViewCells" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

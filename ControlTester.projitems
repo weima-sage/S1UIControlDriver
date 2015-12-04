@@ -10,17 +10,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)ControlTester.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Entity.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Factories\EntityFactory.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EntityListViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EntityViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\EntityListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\InvoiceStatusTextColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\InvoiceFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Invoice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\InvoiceViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\InvoiceListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProductViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCells\InvoiceListViewCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCells\ProductListViewCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProductListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\ProductFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\InvoiceListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ProductListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\InvoiceDateColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Expense.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\ExpenseFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCells\ExpenseListViewCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\ExpenseDateColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ExpenseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ExpenseListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ExpenseListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCells\ExpenseListViewCellBinder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCells\InvoiceListViewCellBinder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCells\ProductListViewCellBinding.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
     <Folder Include="$(MSBuildThisFileDirectory)Factories\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ValueConverters\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewCells\" />
+    <Folder Include="$(MSBuildThisFileDirectory)New Folder\" />
   </ItemGroup>
 </Project>
