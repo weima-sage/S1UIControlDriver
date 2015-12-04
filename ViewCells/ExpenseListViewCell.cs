@@ -11,9 +11,7 @@ namespace ControlTester.ViewCells
     {
         protected override View PrependView()
         {
-            var converter = new ExpenseDateColorConverter();
-            var binding = new Binding("InfoStatus", BindingMode.OneWay, converter);
-            return new MonthAndDayView(binding);
+            return new MonthAndDayView();
         }
     }
 

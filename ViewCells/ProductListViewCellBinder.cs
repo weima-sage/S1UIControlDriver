@@ -5,14 +5,16 @@ using ControlTester.ValueConverters;
 
 namespace ControlTester.ViewCells
 {
-    public class ProductListViewCellBinding : BaseListViewCellBinder
+    public class ProductListViewCellBinder : BaseListViewCellBinder
     {
         public override Binding InfoTextColorBinding()
         {
+            // Find better way to push color over without needing to bind. 
+            // Color is static for product
             return new Binding(
-                "InfoStatus", 
+                "Info", 
                 BindingMode.OneWay, 
-                new InvoiceStatusTextColorConverter()
+                new ProductStatusTextColorConverter()
             );
         }        
     }

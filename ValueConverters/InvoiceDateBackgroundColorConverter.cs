@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace ControlTester.ValueConverters
 {
-    public class InvoiceDateColorConverter : IValueConverter
+    public class InvoiceDateBackgroundColorConverter : IValueConverter
     {
         #region IValueConverter implementation
 
@@ -12,8 +12,8 @@ namespace ControlTester.ValueConverters
             switch ((int) value)
             {
             case 0: return Color.White;
-            case 1: return Color.Gray;
-            case 2: return Color.FromHex("cd5c5c");
+            case 1: return Color.FromHex("cacbc8");
+            case 2: return Color.FromHex("ca2a60");
             default: return Color.White;
             }
         }

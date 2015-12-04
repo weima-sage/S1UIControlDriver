@@ -13,7 +13,7 @@ namespace ControlTester.Views
             _viewModel = viewModel;
 
             RowHeight = 70;
-            BackgroundColor = Color.FromHex("d3d3d3");
+            BackgroundColor = Color.FromHex("ebedef");
             SeparatorVisibility = SeparatorVisibility.None;
             ItemsSource = _viewModel.EntityList;
             ItemTemplate = new DataTemplate(typeof(ExpenseListViewCell));

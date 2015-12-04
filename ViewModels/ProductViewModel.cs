@@ -13,7 +13,7 @@ namespace ControlTester.ViewModels
         public string Title => _entity.Description;
         public string Subtitle => _entity.TypeOfSale;
         public string Amount => "$" + _entity.Amount.ToString();
-        public string Info => String.Empty;
+        public string Info =>"Product";
     }
 }
 
