@@ -1,14 +1,14 @@
 ﻿using System;
 using ControlTester.Models;
-using System.Collections.ObjectModel;
+using System.Collections.Generic;
 
 namespace ControlTester.Factories
 {
     public static class ExpenseFactory
     {
-        public static ObservableCollection<Expense> CreateExpenses(int numExpenses)
+        public static IList<Expense> CreateExpenses(int numExpenses)
         {
-            var entities = new ObservableCollection<Expense>();
+            var entities = new List<Expense>();
             Random rnd = new Random();
             for(int i = 1; i < numExpenses + 1; ++i)
             {

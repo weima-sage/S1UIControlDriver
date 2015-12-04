@@ -1,15 +1,15 @@
 ﻿using System;
 using ControlTester.Models;
-using System.Collections.ObjectModel;
+using System.Collections.Generic;
 
 namespace ControlTester.Factories
 {
     public static class ProductFactory
     {
-        public static ObservableCollection<Product> CreateProducts(int numProducts)
+        public static IList<Product> CreateProducts(int numProducts)
         {
-            var entities = new ObservableCollection<Product>();
-            Random rnd = new Random(0);
+            var entities = new List<Product>();
+            Random rnd = new Random();
             for(int i = 1; i < numProducts + 1; ++i)
             {
                 entities.Add(new Product { 

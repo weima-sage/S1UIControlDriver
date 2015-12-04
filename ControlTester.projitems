@@ -43,6 +43,5 @@
     <Folder Include="$(MSBuildThisFileDirectory)Factories\" />
     <Folder Include="$(MSBuildThisFileDirectory)ValueConverters\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewCells\" />
-    <Folder Include="$(MSBuildThisFileDirectory)New Folder\" />
   </ItemGroup>
 </Project>
