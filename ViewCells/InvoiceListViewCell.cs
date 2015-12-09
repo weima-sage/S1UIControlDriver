@@ -6,9 +6,11 @@ using ControlTester.ValueConverters;
 
 namespace ControlTester.ViewCells
 {
-    public class InvoiceListViewCell 
-        : EntityListViewCell<InvoiceListViewCellBinder>
+    public class InvoiceListViewCell : EntityListViewCell
     {
+        public InvoiceListViewCell()
+            :base(new InvoiceListViewCellBinder()){}
+
         protected override View PrependView()
         {
             var converterTextColor = 

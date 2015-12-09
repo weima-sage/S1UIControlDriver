@@ -4,9 +4,10 @@ using Sage.SageOne.SageOneMobile.Controls;
 
 namespace ControlTester.ViewCells
 {
-    public class ProductListViewCell 
-        : EntityListViewCell<ProductListViewCellBinder>
+    public class ProductListViewCell : EntityListViewCell
     {
+        public ProductListViewCell()
+            :base(new ProductListViewCellBinder()) { }
     }
 
 }

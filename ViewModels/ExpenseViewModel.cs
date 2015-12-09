@@ -4,11 +4,18 @@ using Sage.SageOne.SageOneMobile.Controls.ViewModels;
 
 namespace ControlTester.ViewModels
 {
-    public class ExpenseViewModel : SimpleViewModel, IEntityViewModel
+    public class ExpenseViewModel : SimpleViewModel, IEntityLightViewModel
     {
         private readonly Expense _entity;
 
-        public ExpenseViewModel(Expense entity) {  _entity = entity; }
+        public ExpenseViewModel(Expense entity)
+        {  
+            PrimaryKey = "1";
+            _entity = entity; 
+
+        }
+
+        public string PrimaryKey { get; private set; }
 
         public string Title => _entity.ContactName;
         public string Subtitle => _entity.CompanyName;

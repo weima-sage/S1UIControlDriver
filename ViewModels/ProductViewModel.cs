@@ -4,11 +4,17 @@ using Sage.SageOne.SageOneMobile.Controls.ViewModels;
 
 namespace ControlTester.ViewModels
 {
-    public class ProductViewModel : SimpleViewModel, IEntityViewModel
+    public class ProductViewModel : SimpleViewModel, IEntityLightViewModel
     {
         private readonly Product _entity;
 
-        public ProductViewModel(Product entity) {  _entity = entity; }
+        public ProductViewModel(Product entity)
+        {  
+            PrimaryKey = "1";
+            _entity = entity; 
+        }
+
+        public string PrimaryKey { get; private set; }
 
         public string Title => _entity.Description;
         public string Subtitle => _entity.TypeOfSale;

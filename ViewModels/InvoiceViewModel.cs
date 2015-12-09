@@ -4,12 +4,17 @@ using Sage.SageOne.SageOneMobile.Controls.ViewModels;
 
 namespace ControlTester.ViewModels
 {
-    public class InvoiceViewModel : SimpleViewModel, IEntityViewModel
+    public class InvoiceViewModel : SimpleViewModel, IEntityLightViewModel
     {
         private readonly Invoice _entity;
 
-        public InvoiceViewModel(Invoice entity) {  _entity = entity; }
+        public InvoiceViewModel(Invoice entity) 
+        {  
+            PrimaryKey = "1";
+            _entity = entity;             
+        }
 
+        public string PrimaryKey { get; private set; }
         public string Title => _entity.ContactName;
         public string Subtitle => _entity.CompanyName;
         public string Amount => "$" + _entity.Amount.ToString();

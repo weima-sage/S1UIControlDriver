@@ -6,9 +6,11 @@ using ControlTester.ValueConverters;
 
 namespace ControlTester.ViewCells
 {
-    public class ExpenseListViewCell 
-        : EntityListViewCell<ExpenseListViewCellBinder>
+    public class ExpenseListViewCell : EntityListViewCell
     {
+        public ExpenseListViewCell()
+            :base(new ExpenseListViewCellBinder()){}
+
         protected override View PrependView()
         {
             return new MonthAndDayView();
