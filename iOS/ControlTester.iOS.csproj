@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ControlTester.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>ControlTester.iOS</AssemblyName>
+    <AssemblyName>ControlTesteriOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -93,7 +93,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -116,8 +118,8 @@
     </BundleResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\src\sageone_xamarin\Sage.SageOne.SageOneMobile.Controls\Sage.SageOne.SageOneMobile.Controls.csproj">
-      <Project>{962C8A96-3ADC-4FA9-8937-EB2C443F0DB0}</Project>
+    <ProjectReference Include="..\..\sageone_xamarin\Sage.SageOne.SageOneMobile.Controls\Sage.SageOne.SageOneMobile.Controls.csproj">
+      <Project>{962c8a96-3adc-4fa9-8937-eb2c443f0db0}</Project>
       <Name>Sage.SageOne.SageOneMobile.Controls</Name>
     </ProjectReference>
   </ItemGroup>

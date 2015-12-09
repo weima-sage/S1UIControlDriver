@@ -34,6 +34,7 @@ namespace ControlTester.ViewModels
 
 
         public int InfoStatus => (int)(_entity.InvoiceStatus);
+
         public DateTime MonthAndDay => new DateTime(2015, 9, 24);
     }
 }
