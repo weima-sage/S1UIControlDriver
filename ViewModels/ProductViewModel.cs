@@ -1,5 +1,6 @@
 ﻿using System;
 using ControlTester.Models;
+using Sage.SageOne.SageOneMobile.Controls.Style;
 using Sage.SageOne.SageOneMobile.Controls.ViewModels;
 
 namespace ControlTester.ViewModels
@@ -20,6 +21,7 @@ namespace ControlTester.ViewModels
         public string Subtitle => _entity.TypeOfSale;
         public string Amount => "$" + _entity.Amount.ToString();
         public string Info =>"Product";
+        public DisplayEnums InfoStatus => DisplayEnums.Info;
     }
 }
 

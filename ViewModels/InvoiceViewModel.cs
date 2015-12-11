@@ -1,5 +1,6 @@
 ﻿using System;
 using ControlTester.Models;
+using Sage.SageOne.SageOneMobile.Controls.Style;
 using Sage.SageOne.SageOneMobile.Controls.ViewModels;
 
 namespace ControlTester.ViewModels
@@ -33,7 +34,23 @@ namespace ControlTester.ViewModels
         }
 
 
-        public int InfoStatus => (int)(_entity.InvoiceStatus);
+        public DisplayEnums InfoStatus
+        {
+            get
+            {
+                switch (_entity.InvoiceStatus)
+                {
+                    case InvoiceStatus.Paid:
+                        return DisplayEnums.Info;
+                    case InvoiceStatus.Unpaid:
+                        return DisplayEnums.BadNews;
+                    case InvoiceStatus.Overdue:
+                        return DisplayEnums.AwfulNews;
+                    default:
+                        return DisplayEnums.Info;
+                }
+            }
+        }
 
         public DateTime MonthAndDay => new DateTime(2015, 9, 24);
     }

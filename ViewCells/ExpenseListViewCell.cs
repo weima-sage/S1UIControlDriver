@@ -13,7 +13,7 @@ namespace ControlTester.ViewCells
 
         protected override View PrependView()
         {
-            return new MonthAndDayView();
+            return new MonthAndDayView( MonthAndDayViewStyleBinding.CreateInstance);
         }
     }
 

@@ -13,22 +13,7 @@ namespace ControlTester.ViewCells
 
         protected override View PrependView()
         {
-            var converterTextColor = 
-                new InvoiceDateTextColorConverter();
-            var bindingMonthTextColor = 
-                new Binding("InfoStatus", BindingMode.OneWay, converterTextColor);
-            var bindingDayTextColor = 
-                new Binding("InfoStatus", BindingMode.OneWay, converterTextColor);
-
-            var converterBackgroundColor = 
-                new InvoiceDateBackgroundColorConverter();
-            var bindingBackgroundColor = 
-                new Binding("InfoStatus", BindingMode.OneWay, converterBackgroundColor);
-            
-            return new MonthAndDayView(
-                bindingMonthTextColor, 
-                bindingDayTextColor,
-                bindingBackgroundColor);
+            return new MonthAndDayView(MonthAndDayViewStyleBinding.CreateInstance);
         }
     }
 
