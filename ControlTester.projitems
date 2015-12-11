@@ -14,7 +14,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\DisplayEnumToDayStyleConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\DisplayEnumToMonthAndDayStyleConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\DisplayEnumToMonthStyleConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\MonthAndDayViewStyleBinding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCells\ListViewCellBinding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCells\MonthAndDayViewStyleBinding.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\InvoiceStatusTextColorConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Factories\InvoiceFactory.cs" />
@@ -47,6 +48,5 @@
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
     <Folder Include="$(MSBuildThisFileDirectory)Factories\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewCells\" />
   </ItemGroup>
 </Project>

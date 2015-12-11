@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ControlTester.ValueConverters;
 using Sage.SageOne.SageOneMobile.Controls.Style;
 using Sage.SageOne.SageOneMobile.Controls.ViewModels;
 using Xamarin.Forms;
 
-namespace ControlTester.ValueConverters
+namespace ControlTester.ViewCells
 {
     public class MonthAndDayViewStyleBinding:IMonthAndDayViewStyleBinding
     {
-
-        public static MonthAndDayViewStyleBinding CreateInstance =>
-            new MonthAndDayViewStyleBinding(DisplayEnumToDayStyleConverter.Instance, DisplayEnumToMonthStyleConverter.Instance, DisplayEnumToContentStyleConverter.Instance);
+        public static MonthAndDayViewStyleBinding NewInstance =>
+            new MonthAndDayViewStyleBinding(DisplayEnumToDayStyleConverter.Instance, 
+                DisplayEnumToMonthStyleConverter.Instance, 
+                DisplayEnumToContentStyleConverter.Instance);
 
         public Binding DayBinding { get; }
         public Binding MonthBinding { get; }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Sage.SageOne.SageOneMobile.Controls.Style;
 using Xamarin.Forms;
 
 namespace ControlTester.ValueConverters
@@ -9,12 +10,19 @@ namespace ControlTester.ValueConverters
 
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            switch ((int) value)
+            switch ((DisplayEnums) value)
             {
-                case 0: return Color.FromHex("41c681");
-                case 1: return Color.FromHex("858680");
-                case 2: return Color.FromHex("ca2a60");
-                default: return Color.White;
+                case DisplayEnums.AwfulNews:
+                    return Color.FromHex("#CA2A60");
+                case DisplayEnums.BadNews:
+                    return Color.FromHex("#A8A9A4");
+                case DisplayEnums.Info:
+                case DisplayEnums.GoodNews:
+                case DisplayEnums.GreatNews:
+                case DisplayEnums.Party:
+                    return Color.FromHex("#38C72A");
+                default:
+                    return Color.FromHex("#38C72A");
             }
         }
 
